@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://style.fluig.com/css/fluig-style-guide-flat.min.css"
     />
-  
 
     <title>Vflows - teste estagio fluig</title>
   </head>
@@ -16,200 +15,223 @@
     <div class="fluig-style-guide">
       <h1 class="titulo-form text-center">CADASTRO FORNECEDOR/PRODUTO</h1>
 
-      <div class="panel panel-default">
-            <div class="panel-heading painel-head">
-            <h2 class="panel-title">Dados do fornecedor</h2>
-            </div>
-
-        <section class="panel-body">
-          <form name="fornecedor" id="fornecedor">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="razaoSocial">Razão social</label>
-                    <input
-                    class="form-control"
-                    type="text"
-                    name="razaoSocial"
-                    id="razaoSocial"
-                    required
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="nomeFantasia">Nome Fantasia</label>
-                    <input
-                    class="form-control"
-                    required
-                    type="text"
-                    name="nomeFantasia"
-                    id="nomeFantasia"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="cep">CEP</label>
-                    <input
-                    class="form-control"
-                    required
-                    name="cep"
-                    id="cep"
-                    type="text"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="endereco">Endereço</label>
-                    <input
-                    class="form-control"
-                    required
-                    name="endereco"
-                    id="endereco"
-                    type="text"
-                    />
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="cnpj">CNPJ</label>
-                    <input
-                    class="form-control"
-                    required
-                    name="cnpj"
-                    id="cnpj"
-                    type="text"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="inscrEstadual">Inscrição estadual</label>
-                    <input
-                    class="form-control"
-                    name="inscrEstadual"
-                    id="inscrEstadual"
-                    type="text"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="inscrMunicipal">Inscrição municipal</label>
-                    <input
-                    class="form-control"
-                    name="inscrMunicipal"
-                    id="inscrMunicipal"
-                    type="text"
-                    />
-                </div>
-              <div class="form-group">
-                    <label for="numero">Número</label>
-                    <input
-                    class="form-control"
-                    name="numero"
-                    id="numero"
-                    type="text"
-                    required
-                    />
-                </div>
-            </div>
-            <div class="col-md-12">
-                    <div class="form-group">
-                <label for="complemento">Complemento</label>
-                <input
-                    class="form-control"
-                    name="complemento"
-                    id="complemento"
-                    type="text"
-                />
-                </div>
+      <div class="panel">
+        <div class="panel-heading fs-bg-info fs-color-white">
+          <h2 class="panel-title">Dados do fornecedor</h2>
         </div>
 
+        <section class="panel-body container-fluid fs-border fs-no-shadow">
+          <form name="fornecedor" id="fornecedor">
+            <div class="row">
+              <div class="form-group col-xs-8 col-md-8">
+                <label for="razaoSocial">Razão social</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="razaoSocial"
+                  id="razaoSocial"
+                  required
+                />
+              </div>
+              <div class="form-group col-xs-4 col-md-4">
+                <label for="cnpj">CNPJ</label>
+                <input
+                  class="form-control"
+                  required
+                  name="cnpj"
+                  id="cnpj"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-8 col-md-8">
+                <label for="nomeFantasia">Nome Fantasia</label>
+                <input
+                  class="form-control"
+                  required
+                  type="text"
+                  name="nomeFantasia"
+                  id="nomeFantasia"
+                />
+              </div>
 
-        <div class="col-md-4">
+              <div class="form-group col-xs-4 col-md-4">
+                <label for="inscrEstadual">Inscrição estadual</label>
+                <input
+                  class="form-control"
+                  name="inscrEstadual"
+                  id="inscrEstadual"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-4 col-md-4">
+                <label for="cep">CEP</label>
+                <input
+                  class="form-control"
+                  required
+                  name="cep"
+                  id="cep"
+                  type="text"
+                />
+              </div>
+              <div
+                class="form-group col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4"
+              >
+                <label for="inscrMunicipal">Inscrição municipal</label>
+                <input
+                  class="form-control"
+                  name="inscrMunicipal"
+                  id="inscrMunicipal"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-8 col-md-8">
+                <label for="endereco">Endereço</label>
+                <input
+                  class="form-control"
+                  required
+                  name="endereco"
+                  id="endereco"
+                  type="text"
+                />
+              </div>
+
+              <div class="form-group col-xs-4 col-md-4">
+                <label for="numero">Número</label>
+                <input
+                  class="form-control"
+                  name="numero"
+                  id="numero"
+                  type="text"
+                  required
+                />
+              </div>
+            </div>
             <div class="form-group">
+              <label for="complemento">Complemento</label>
+              <input
+                class="form-control"
+                name="complemento"
+                id="complemento"
+                type="text"
+              />
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-4 col-md-4">
                 <label for="bairro">Bairro</label>
                 <input
-                    class="form-control"
-                    name="bairro"
-                    id="bairro"
-                    type="text"
-                    required
+                  class="form-control"
+                  name="bairro"
+                  id="bairro"
+                  type="text"
+                  required
                 />
-                </div>
-        </div>
+              </div>
 
-        <div class="col-md-4">
-            <div class="form-group">
+              <div class="form-group col-xs-4 col-md-4">
                 <label for="municipio">Municipio</label>
                 <input
-                    class="form-control"
-                    name="municipio"
-                    id="municipio"
-                    type="text"
-                    required
+                  class="form-control"
+                  name="municipio"
+                  id="municipio"
+                  type="text"
+                  required
                 />
-            </div>
-        </div>
+              </div>
 
-        <div class="col-md-4">
-            <div class="form-group">
+              <div class="form-group col-xs-4 col-md-4">
                 <label for="estado">Estado</label>
                 <input
-                    class="form-control"
-                    name="estado"
-                    id="estado"
-                    type="text"
-                    required
+                  class="form-control"
+                  name="estado"
+                  id="estado"
+                  type="text"
+                  required
                 />
+              </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="form-group">
+            <div class="row">
+              <div class="form-group col-xs-6 col-md-6">
                 <label for="responsavel">Nome da Pessoa de Contato</label>
                 <input
-                required
-                    class="form-control"
-                    name="responsavel"
-                    id="responsavel"
-                    type="text"
+                  required
+                  class="form-control"
+                  name="responsavel"
+                  id="responsavel"
+                  type="text"
                 />
-                </div>
-        </div>
+              </div>
 
-        <div class="col-md-4">
-            <div class="form-group">
+              <div class="form-group col-xs-3 col-md-3">
                 <label for="telefone">Telefone</label>
                 <input
-                required
-                    class="form-control"
-                    name="telefone"
-                    id="telefone"
-                    type="text"
+                  required
+                  class="form-control"
+                  name="telefone"
+                  id="telefone"
+                  type="text"
                 />
-            </div>
-        </div>
+              </div>
 
-        <div class="col-md-4">
-            <div class="form-group">
+              <div class="form-group col-xs-3 col-md-3">
                 <label for="email">E-mail</label>
                 <input
-                required
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    type="email"
+                  required
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  type="email"
                 />
+              </div>
             </div>
-        </div>
           </form>
         </section>
-   
       </div>
-    <div class="panel panel-default">
-        <div class="panel-heading painel-head">
-            <h2 class="panel-title">Produtos</h2>
+      <div class="panel panel-default">
+        <div class="panel-heading fs-bg-info">
+          <h2 class="panel-title fs-color-white">Produtos</h2>
         </div>
+        <section class="panel-body container-fluid">
+          <fieldset>
+            <legend>Produto</legend>
+            <div class="container-fluid">
+              <div class="form-group col-md-12">
+                <label for="descProduto">Produto</label>
+                <input type="text" name="descProduto" id="descProduto" />
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <label>UND. Medida</label>
+                  <input type="text" />
+                </div>
+                <div class="col-md-3">
+                  <label>QTDE em estoque</label>
+                  <input type="number" />
+                </div>
+                <div class="col-md-3">
+                  <label>Valor unitario</label>
+                  <input type="number" />
+                </div>
+                <div class="col-md-3">
+                  <label>Valor total</label>
 
-    </div>
-  
-  
+                  <input />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </section>
+      </div>
     </div>
 
     <script src="https://style.fluig.com/js/fluig-style-guide-docs-index.min.js"></script>
-    <script src="/scripts/form.js"></script>
+    <script src="/scripts/cepAutoComplete.js"></script>
     <script src="/scripts/jquery-3.7.1.min.js"></script>
+    <script src="/scripts/classesDoFluig.js"></script>
   </body>
 </html>
