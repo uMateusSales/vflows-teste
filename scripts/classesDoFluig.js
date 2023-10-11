@@ -20,7 +20,7 @@ const addFluigToast = (title, type, timeout) => {
 };
 
 /* Botão de adicionar produto */
-$("#addProduto").click(function () {
+$("#addProduto").click(() => {
   const produtos = $(".produtoClass");
 
   addFluigToast("Produto adicionado", "success", "fast");
@@ -36,7 +36,7 @@ $(".deletarProduto").on("click", function () {
   } else addFluigToast("Precisa haver no minimo 1 produto", "warning", "fast");
 });
 
-$("#addAnexo").click(function () {
+$("#addAnexo").click(() => {
   addFluigToast("Documento adicionado", "success", "fast");
   $("#documentoCard").clone(true).appendTo("#anexoContainer");
 });
@@ -48,5 +48,3 @@ $(".btnDelDocumento").on("click", function () {
     $(this).closest(".documentoClass").remove();
   } else addFluigToast("Precisa haver no minimo 1 documento", "warning", "fast");
 });
-const form = document.forms[0];
-console.log(form);

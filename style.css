@@ -1,5 +1,16 @@
 .imgProdutoBg {
-    border-radius: 99999px !important;
-    background-color: #8290CD !important;
-    padding: 10px !important; 
+  border-radius: 99999px !important;
+  background-color: #8290cd !important;
+  padding: 10px !important;
+}
+
+#addAnexo {
+  display: none !important;
+}
+#anexoLabel {
+  color: white !important;
+}
+.borda {
+  border: 1px !important;
+  border-color: black !important;
 }

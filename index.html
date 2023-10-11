@@ -1,275 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://style.fluig.com/css/fluig-style-guide-flat.min.css"
-    />
 
-    <title>Vflows - teste estagio fluig</title>
-  </head>
-  <body>
-    <div class="fluig-style-guide">
-      <h1 class="titulo-form text-center">CADASTRO FORNECEDOR/PRODUTO</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://style.fluig.com/css/fluig-style-guide-flat.min.css" />
 
-      <div class="panel">
-        <div class="panel-heading fs-bg-info fs-color-white">
-          <h2 class="panel-title">Dados do fornecedor</h2>
-        </div>
+  <title>Vflows - teste estagio fluig</title>
+</head>
 
-        <section id="sectionFornecedor" class="panel-body container-fluid fs-border fs-no-shadow">
-          <form name="fornecedor" id="fornecedorForm">
-            <div class="row">
-              <div class="form-group col-xs-8 col-md-8">
-                <label for="razaoSocial">Razão social</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  name="razaoSocial"
-                  id="razaoSocial"
-                  required
-                />
-              </div>
-              <div class="form-group col-xs-4 col-md-4">
-                <label for="cnpj">CNPJ</label>
-                <input
-                  class="form-control"
-                  required
-                  name="cnpj"
-                  id="cnpj"
-                  type="text"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-8 col-md-8">
-                <label for="nomeFantasia">Nome Fantasia</label>
-                <input
-                  class="form-control"
-                  required
-                  type="text"
-                  name="nomeFantasia"
-                  id="nomeFantasia"
-                />
-              </div>
+<body>
+  <div class="fluig-style-guide">
+    <h1 class="titulo-form text-center">CADASTRO FORNECEDOR/PRODUTO</h1>
 
-              <div class="form-group col-xs-4 col-md-4">
-                <label for="inscrEstadual">Inscrição estadual</label>
-                <input
-                  class="form-control"
-                  name="inscrEstadual"
-                  id="inscrEstadual"
-                  type="text"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-4 col-md-4">
-                <label for="cep">CEP</label>
-                <input
-                  class="form-control"
-                  required
-                  name="cep"
-                  id="cep"
-                  type="text"
-                />
-              </div>
-              <div
-                class="form-group col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4"
-              >
-                <label for="inscrMunicipal">Inscrição municipal</label>
-                <input
-                  class="form-control"
-                  name="inscrMunicipal"
-                  id="inscrMunicipal"
-                  type="text"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-8 col-md-8">
-                <label for="endereco">Endereço</label>
-                <input
-                  class="form-control"
-                  required
-                  name="endereco"
-                  id="endereco"
-                  type="text"
-                />
-              </div>
-
-              <div class="form-group col-xs-4 col-md-4">
-                <label for="numero">Número</label>
-                <input
-                  class="form-control"
-                  name="numero"
-                  id="numero"
-                  type="text"
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="complemento">Complemento</label>
-              <input
-                class="form-control"
-                name="complemento"
-                id="complemento"
-                type="text"
-              />
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-4 col-md-4">
-                <label for="bairro">Bairro</label>
-                <input
-                  class="form-control"
-                  name="bairro"
-                  id="bairro"
-                  type="text"
-                  required
-                />
-              </div>
-
-              <div class="form-group col-xs-4 col-md-4">
-                <label for="municipio">Municipio</label>
-                <input
-                  class="form-control"
-                  name="municipio"
-                  id="municipio"
-                  type="text"
-                  required
-                />
-              </div>
-
-              <div class="form-group col-xs-4 col-md-4">
-                <label for="estado">Estado</label>
-                <input
-                  class="form-control"
-                  name="estado"
-                  id="estado"
-                  type="text"
-                  required
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-6 col-md-6">
-                <label for="responsavel">Nome da Pessoa de Contato</label>
-                <input
-                  required
-                  class="form-control"
-                  name="responsavel"
-                  id="responsavel"
-                  type="text"
-                />
-              </div>
-
-              <div class="form-group col-xs-3 col-md-3">
-                <label for="telefone">Telefone</label>
-                <input
-                  required
-                  class="form-control"
-                  name="telefone"
-                  id="telefone"
-                  type="text"
-                />
-              </div>
-
-              <div class="form-group col-xs-3 col-md-3">
-                <label for="email">E-mail</label>
-                <input
-                  required
-                  class="form-control"
-                  name="email"
-                  id="email"
-                  type="email"
-                />
-              </div>
-            </div>
-        
-        </section>
+    <div class="panel">
+      <div class="panel-heading fs-bg-info fs-color-white">
+        <h2 class="panel-title">Dados do fornecedor</h2>
       </div>
-      <div class="panel container-fluid">
-        <div class="panel-heading fs-bg-info">
-          <h2 class="panel-title fs-color-white">Produtos</h2>
-        </div>
-       
-        <div id="produtoContainer" class="panel-body container-fluid " >
-          <div id="produtoCard" class="fs-display-flex fs-align-items-center produtoClass"> 
-          <button type="button"  class="col-md-1 fs-md-margin-right fs-bg-danger fs-max-height-50 fs-max-width-50 fs-border-radius deletarProduto"><img src="/assets/fluigicon-trash.png" /></button>
-      
+
+      <section id="sectionFornecedor" class="panel-body container-fluid fs-border fs-no-shadow borda">
+        <form name="fornecedor" id="fornecedorForm">
+          <div class="row">
+            <div class="form-group col-xs-8 col-md-8">
+              <label for="razaoSocial">Razão social</label>
+              <input class="form-control" type="text" name="razaoSocial" id="razaoSocial" required />
+            </div>
+            <div class="form-group col-xs-4 col-md-4">
+              <label for="cnpj">CNPJ</label>
+              <input class="form-control" required name="cnpj" id="cnpj" type="text" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-xs-8 col-md-8">
+              <label for="nomeFantasia">Nome Fantasia</label>
+              <input class="form-control" required type="text" name="nomeFantasia" id="nomeFantasia" />
+            </div>
+
+            <div class="form-group col-xs-4 col-md-4">
+              <label for="inscricaoEstadual">Inscrição estadual</label>
+              <input class="form-control" name="inscricaoEstadual" id="inscricaoEstadual" type="text" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-xs-4 col-md-4">
+              <label for="cep">CEP</label>
+              <input class="form-control" required name="cep" id="cep" type="text" />
+            </div>
+            <div class="form-group col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4">
+              <label for="inscricaoMunicipal">Inscrição municipal</label>
+              <input class="form-control" name="inscricaoMunicipal" id="inscricaoMunicipal" type="text" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-xs-8 col-md-8">
+              <label for="endereco">Endereço</label>
+              <input class="form-control" required name="endereco" id="endereco" type="text" />
+            </div>
+
+            <div class="form-group col-xs-4 col-md-4">
+              <label for="numero">Número</label>
+              <input class="form-control" name="numero" id="numero" type="text" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="complemento">Complemento</label>
+            <input class="form-control" name="complemento" id="complemento" type="text" />
+          </div>
+          <div class="row">
+            <div class="form-group col-xs-4 col-md-4">
+              <label for="bairro">Bairro</label>
+              <input class="form-control" name="bairro" id="bairro" type="text" required />
+            </div>
+
+            <div class="form-group col-xs-4 col-md-4">
+              <label for="municipio">Municipio</label>
+              <input class="form-control" name="municipio" id="municipio" type="text" required />
+            </div>
+
+            <div class="form-group col-xs-4 col-md-4">
+              <label for="estado">Estado</label>
+              <input class="form-control" name="estado" id="estado" type="text" required />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-xs-6 col-md-6">
+              <label for="nomeContato">Nome da Pessoa de Contato</label>
+              <input required class="form-control" name="nomeContato" id="nomeContato" type="text" />
+            </div>
+
+            <div class="form-group col-xs-3 col-md-3">
+              <label for="telefoneContato">Telefone</label>
+              <input required class="form-control" name="telefoneContato" id="telefoneContato" type="text" />
+            </div>
+
+            <div class="form-group col-xs-3 col-md-3">
+              <label for="emailContato">E-mail</label>
+              <input required class="form-control" name="emailContato" id="emailContato" type="email" />
+            </div>
+          </div>
+
+      </section>
  
+    </div>
+
+    <div class="panel container-fluid">
+      <div class="panel-heading fs-bg-info">
+        <h2 class="panel-title fs-color-white">Produtos</h2>
+      </div>
+
+      <div id="produtoContainer" class="panel-body container-fluid ">
+        <div id="produtoCard" class="fs-display-flex fs-align-items-center produtoClass">
+          <button type="button"
+            class="col-md-1 fs-md-margin-right fs-bg-danger fs-max-height-50 fs-max-width-50 fs-border-radius deletarProduto"><img
+              src="/assets/fluigicon-trash.png" /></button>
+
+
           <fieldset class="fs-display-flex fs-align-items-center col-md-11 container-fluid fieldProduto">
             <div class="imgProdutoBg"><img src="/assets/flaticon-product.png" /></div>
             <legend class="produtoCardTitle">Produto</legend>
-         
-<div class="produtoInputs col-md-12">              
-  <div class="form-group">
-                <label for="descProduto">Produto</label>
-                <input class="form-control" type="text" name="descProduto" id="descProduto" />
-              </div>
-          
-              <div class="row">
-                <div class="form-group col-xs-6 col-md-3">
-                  <label>UND. Medida</label>
-                  <select id="unidadeMedida" class="form-control">
-                    <option>Unidade</option>
-                    <option>Metro</option>
-            
-                </select>
-                </div>
-                <div class="form-group col-xs-6 col-md-3">
-                  <label>QTDE em estoque</label>
-                  <input id="quantidadeEstoque" class="form-control" type="number" />
-                </div>
-                <div class="form-group col-xs-6 col-md-3">
-                  <label>Valor unitario</label>
-                  <input id="valorUnitario" class="form-control" type="number" />
-                </div>
-                <div class="form-group col-xs-6 col-md-3">
-                  <label>Valor total</label>
-                 
-                  <input id="valorTotal" class="form-control" disabled/>
-                </div>
-              </div>
-            </div>
-          </div>
 
-             </fieldset>
+            <div class="produtoInputs col-md-12">
+              <div class="form-group">
+                <label for="descricaoProduto">Produto</label>
+                <input required class="form-control" type="text" name="descricaoProduto" id="descricaoProduto" />
+              </div>
+
+              <div class="row">
+                <div class="form-group  col-sm-6 col-md-3">
+                  <label for="unidadeMedida">UND. Medida</label>
+                  <select required id="unidadeMedida" name="unidadeMedida" class="form-control">
+                    <option value="unidade">Unidade</option>
+                    <option value="metro">Metro</option>
+
+                  </select>
+                </div>
+                <div class="form-group col-sm-6 col-md-3">
+                  <label>QTDE em estoque</label>
+                  <input required id="qtdeEstoque" name="qtdeEstoque" class="form-control" type="number" />
+                </div>
+                <div class="form-group col-sm-6 col-md-3">
+                  <label>Valor unitario</label>
+                  <input required id="valorUnitario" class="form-control" type="number" />
+                </div>
+                <div class="form-group col-sm-6 col-md-3">
+                  <label>Valor total</label>
+
+                  <input id="valorTotal" class="form-control" disabled />
+                </div>
+              </div>
             </div>
-             <button id="addProduto" type="button"class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Adicionar</button>
-          </div>
+        </div>
+
+        </fieldset>
+      </div>
+      <button id="addProduto" type="button"
+        class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Adicionar</button>
+    </div>
     <div class="panel">
       <div class="panel-heading fs-bg-info fs-color-white">
         <h2 class="panel-title">Anexos</h2>
-        </div>
-        <div class="panel-body">
-<fieldset>
-<legend>Itens</legend>
-<div id="anexoContainer">
-<div id="documentoCard" class="documentoClass row">
-  <button type="button" class="col-md-2 fs-md-margin-right fs-bg-danger fs-max-height-50 fs-max-width-50 fs-border-radius btnDelDocumento"><img src="/assets/fluigicon-trash.png" /></button>
-  <button type="button" class="col-md-2 fs-md-margin-right fs-bg-info fs-max-height-50 fs-max-width-50 fs-border-radius btnEyeDocumento"><img src="/assets/fluigicon-eye-open.png" /></button>
-<p class="col-md-7">Documento anexo</p>
-</div>
-</div>
-</fieldset>
-<button id="addAnexo" type="button"class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Incluir anexo</button>
-
-</div>
+      </div>
+      <div class="panel-body">
+        <fieldset>
+          <legend>Itens</legend>
+          <div id="anexoContainer">
+            <div id="documentoCard" class="documentoClass fs-display-flex">
+              <button type="button"
+                class="col-md-2 fs-md-margin-right fs-bg-danger fs-max-height-50 fs-max-width-50 fs-border-radius btnDelDocumento"><img
+                  src="/assets/fluigicon-trash.png" /></button>
+              <button type="button"
+                class="col-md-2 fs-md-margin-right fs-bg-info fs-max-height-50 fs-max-width-50 fs-border-radius btnEyeDocumento"><img
+                  src="/assets/fluigicon-eye-open.png" /></button>
+              <p class="col-md-7">Documento anexo</p>
+            </div>
+          </div>
+        </fieldset>
+        <form enctype="multipart/form-data" method="post">
+          <label id="anexoLabel" for="addAnexo"
+            class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Incluir
+            anexo</label>
+          <input name="addAnexo" id="addAnexo" type="file" hidden />
+        </form>
+      </div>
 
     </div>
-        
-    <button id="btnSubmit" type="submit"class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Salvar fornecedor</button>
-  </form>
-    </div>
 
-    <script src="https://style.fluig.com/js/fluig-style-guide-docs-index.min.js"></script>
-    <script src="/scripts/cepAutoComplete.js"></script>
-    <script src="/scripts/jquery-3.7.1.min.js"></script>
-    <script src="/scripts/classesDoFluig.js"></script>
-  </body>
+    <button id="btnSubmit" type="submit"
+      class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Salvar
+      fornecedor</button>
+    </form>
+  </div>
+
+  <script src="https://style.fluig.com/js/fluig-style-guide-docs-index.min.js"></script>
+  <script src="/scripts/cepAutoComplete.js"></script>
+  <script src="/scripts/jquery-3.7.1.min.js"></script>
+  <script src="/scripts/classesDoFluig.js"></script>
+</body>
+
 </html>
