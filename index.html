@@ -21,7 +21,7 @@
         </div>
 
         <section id="sectionFornecedor" class="panel-body container-fluid fs-border fs-no-shadow">
-          <form name="fornecedor" id="fornecedor">
+          <form name="fornecedor" id="fornecedorForm">
             <div class="row">
               <div class="form-group col-xs-8 col-md-8">
                 <label for="razaoSocial">Razão social</label>
@@ -189,7 +189,7 @@
                 />
               </div>
             </div>
-          </form>
+        
         </section>
       </div>
       <div class="panel container-fluid">
@@ -199,12 +199,12 @@
        
         <div id="produtoContainer" class="panel-body container-fluid " >
           <div id="produtoCard" class="fs-display-flex fs-align-items-center produtoClass"> 
-          <button type="button"  class="col-md-1 fs-md-margin-right fs-bg-danger fs-max-height-50 fs-max-width-50 deletarProduto"><img src="/assets/fluigicon-trash.png" /></button>
+          <button type="button"  class="col-md-1 fs-md-margin-right fs-bg-danger fs-max-height-50 fs-max-width-50 fs-border-radius deletarProduto"><img src="/assets/fluigicon-trash.png" /></button>
       
  
           <fieldset class="fs-display-flex fs-align-items-center col-md-11 container-fluid fieldProduto">
             <div class="imgProdutoBg"><img src="/assets/flaticon-product.png" /></div>
-            <legend>Produto</legend>
+            <legend class="produtoCardTitle">Produto</legend>
          
 <div class="produtoInputs col-md-12">              
   <div class="form-group">
@@ -215,20 +215,24 @@
               <div class="row">
                 <div class="form-group col-xs-6 col-md-3">
                   <label>UND. Medida</label>
-                  <input class="form-control" type="text" />
+                  <select id="unidadeMedida" class="form-control">
+                    <option>Unidade</option>
+                    <option>Metro</option>
+            
+                </select>
                 </div>
                 <div class="form-group col-xs-6 col-md-3">
                   <label>QTDE em estoque</label>
-                  <input class="form-control" type="number" />
+                  <input id="quantidadeEstoque" class="form-control" type="number" />
                 </div>
                 <div class="form-group col-xs-6 col-md-3">
                   <label>Valor unitario</label>
-                  <input class="form-control" type="number" />
+                  <input id="valorUnitario" class="form-control" type="number" />
                 </div>
                 <div class="form-group col-xs-6 col-md-3">
                   <label>Valor total</label>
                  
-                  <input class="form-control" />
+                  <input id="valorTotal" class="form-control" disabled/>
                 </div>
               </div>
             </div>
@@ -238,9 +242,29 @@
             </div>
              <button id="addProduto" type="button"class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Adicionar</button>
           </div>
-    
+    <div class="panel">
+      <div class="panel-heading fs-bg-info fs-color-white">
+        <h2 class="panel-title">Anexos</h2>
+        </div>
+        <div class="panel-body">
+<fieldset>
+<legend>Itens</legend>
+<div id="anexoContainer">
+<div id="documentoCard" class="documentoClass row">
+  <button type="button" class="col-md-2 fs-md-margin-right fs-bg-danger fs-max-height-50 fs-max-width-50 fs-border-radius btnDelDocumento"><img src="/assets/fluigicon-trash.png" /></button>
+  <button type="button" class="col-md-2 fs-md-margin-right fs-bg-info fs-max-height-50 fs-max-width-50 fs-border-radius btnEyeDocumento"><img src="/assets/fluigicon-eye-open.png" /></button>
+<p class="col-md-7">Documento anexo</p>
+</div>
+</div>
+</fieldset>
+<button id="addAnexo" type="button"class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Incluir anexo</button>
+
+</div>
+
+    </div>
         
-   
+    <button id="btnSubmit" type="submit"class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Salvar fornecedor</button>
+  </form>
     </div>
 
     <script src="https://style.fluig.com/js/fluig-style-guide-docs-index.min.js"></script>
