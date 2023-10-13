@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="https://style.fluig.com/css/fluig-style-guide-flat.min.css" />
 
-  <title>Vflows - teste estagio fluig</title>
+  <title>Teste estagio Vflows - Formulario de cadastro</title>
 </head>
 
 <body>
@@ -114,10 +114,10 @@
           <button type="button"
             class="col-md-1 fs-md-margin-right fs-bg-danger fs-max-height-50 fs-max-width-50 fs-border-radius deletarProduto"><img
               src="/assets/fluigicon-trash.png" /></button>
-
+              <div class="imgProdutoBg"><img src="/assets/flaticon-product.png" /></div>
 
           <fieldset class="fs-display-flex fs-align-items-center col-md-11 container-fluid fieldProduto">
-            <div class="imgProdutoBg"><img src="/assets/flaticon-product.png" /></div>
+          
             <legend class="produtoCardTitle">Produto</legend>
 
             <div class="produtoInputs col-md-12">
@@ -128,25 +128,25 @@
 
               <div class="row">
                 <div class="form-group  col-sm-6 col-md-3">
-                  <label for="unidadeMedida">UND. Medida</label>
-                  <select required id="unidadeMedida" name="unidadeMedida" class="form-control">
+                  <label  for="unidadeMedida">UND. Medida</label>
+                  <select  required id="unidadeMedida" name="unidadeMedida" class="form-control">
                     <option value="unidade">Unidade</option>
                     <option value="metro">Metro</option>
 
                   </select>
                 </div>
-                <div class="form-group col-sm-6 col-md-3">
-                  <label>QTDE em estoque</label>
-                  <input required id="qtdeEstoque" name="qtdeEstoque" class="form-control" type="number" />
+                <div class="form-group   col-sm-6 col-md-3">
+                  <label>QTDE. em estoque</label>
+                  <input  required id="qtdeEstoque" name="qtdeEstoque" class="form-control" type="number" />
                 </div>
                 <div class="form-group col-sm-6 col-md-3">
                   <label>Valor unitario</label>
-                  <input required id="valorUnitario" class="form-control" type="number" />
+                  <input name="valorUnitario" required id="valorUnitario" class="form-control" type="number" />
                 </div>
                 <div class="form-group col-sm-6 col-md-3">
                   <label>Valor total</label>
 
-                  <input id="valorTotal" class="form-control" disabled />
+                  <input name="valorTotal" id="valorTotal" class="form-control" readonly />
                 </div>
               </div>
             </div>
@@ -169,19 +169,19 @@
               <button type="button"
                 class="col-md-2 fs-md-margin-right fs-bg-danger fs-max-height-50 fs-max-width-50 fs-border-radius btnDelDocumento"><img
                   src="/assets/fluigicon-trash.png" /></button>
-              <button type="button"
+              <a id="downloadBtn" download=""
                 class="col-md-2 fs-md-margin-right fs-bg-info fs-max-height-50 fs-max-width-50 fs-border-radius btnEyeDocumento"><img
-                  src="/assets/fluigicon-eye-open.png" /></button>
+                  src="/assets/fluigicon-eye-open.png" /></a>
               <p class="col-md-7">Documento anexo</p>
             </div>
           </div>
         </fieldset>
-        <form enctype="multipart/form-data" method="post">
+     
           <label id="anexoLabel" for="addAnexo"
             class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Incluir
             anexo</label>
           <input name="addAnexo" id="addAnexo" type="file" hidden />
-        </form>
+      
       </div>
 
     </div>
@@ -189,6 +189,7 @@
     <button id="btnSubmit" type="submit"
       class='btn btn-success fs-md-margin-vertical col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12'>Salvar
       fornecedor</button>
+  
     </form>
   </div>
 
@@ -196,6 +197,7 @@
   <script src="/scripts/cepAutoComplete.js"></script>
   <script src="/scripts/jquery-3.7.1.min.js"></script>
   <script src="/scripts/classesDoFluig.js"></script>
+ 
 </body>
 
 </html>

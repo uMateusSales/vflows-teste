@@ -5,7 +5,15 @@ $(document).ready(function () {
     $("#cidade").val("");
     $("#municipio").val("");
   }
-
+  const addFluigToast = (title, type, timeout) => {
+    FLUIGC.toast({
+      title: `${title}`,
+      message: "",
+      type: `${type}`,
+      timeout: `${timeout}`,
+    });
+  };
+  
   $("#cep").blur(function () {
     const cep = $(this).val().replace(/\D/g, "");
 
@@ -16,7 +24,7 @@ $(document).ready(function () {
         $("#endereco").val("Procurando...");
         $("#bairro").val("Procurando...");
         $("#cidade").val("Procurando...");
-        $("#municipio").val("Procurando...");
+        $("#estado").val("Procurando...");
 
         $.getJSON(
           "https://viacep.com.br/ws/" + cep + "/json/?callback=?",
@@ -25,16 +33,16 @@ $(document).ready(function () {
               $("#endereco").val(dados.logradouro);
               $("#bairro").val(dados.bairro);
               $("#cidade").val(dados.localidade);
-              $("#municipio").val(dados.uf);
+              $("#estado").val(dados.uf);
             } else {
               limpa_formulário_cep();
-              alert("CEP não encontrado.");
+              addFluigToast('CEP não encontrado', 'warning', 'fast');
             }
           }
         );
       } else {
         limpa_formulário_cep();
-        alert("Formato de CEP inválido.");
+        addFluigToast('formato de cep invalido, tente novamente', 'warning', 'fast');
       }
     } else {
       limpa_formulário_cep();
