@@ -29,20 +29,6 @@ const formValues = {
   anexos: [],
 };
 
-const removeAnexosFromArray = () => {
-  const filesArray = Array.from(inputAnexo.files);
-  const botaoAnexado = document.querySelector("a").closest("a");
-
-  const produtoDoAnexo = filesArray.find(
-    (i) => i.name === botaoAnexado.download
-  );
-
-  const anexosAtualizados = formValues.anexos.filter(
-    (i) => i.name !== produtoDoAnexo
-  );
-
-  return formValues;
-};
 
 
 $("#addProduto").click(() => {
